@@ -1,0 +1,53 @@
+// index.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Odyssey - Protótipo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-world">
+            <div id="player"></div>
+            <div class="building" style="top: 100px; left: 100px;"></div>
+            <div class="building" style="top: 100px; left: 300px;"></div>
+            <div class="building" style="top: 300px; left: 100px;"></div>
+            <div class="building" style="top: 300px; left: 500px;"></div>
+            <div class="building" style="top: 500px; left: 200px;"></div>
+            <div class="building" style="top: 500px; left: 400px;"></div>
+            <div class="vehicle car" id="car1" style="top: 250px; left: 200px;"></div>
+            <div class="vehicle car" id="car2" style="top: 450px; left: 300px;"></div>
+            <div class="npc" id="npc1" style="top: 150px; left: 400px;"></div>
+            <div class="npc" id="npc2" style="top: 350px; left: 150px;"></div>
+        </div>
+        <div id="hud">
+            <div id="minimap">
+                <div class="minimap-player"></div>
+            </div>
+            <div id="health-bar">
+                <div id="health-fill"></div>
+            </div>
+            <div id="money">R$ 5,000</div>
+            <div id="wanted-level">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star empty">★</span>
+                <span class="star empty">★</span>
+            </div>
+            <div id="weapon">Desarmado</div>
+            <div id="mission-info">Missão: Explorar Nova Atlântida</div>
+        </div>
+        <div id="controls-info">
+            <p>W, A, S, D - Mover | E - Interagir | R - Recarregar | F - Entrar/Sair de Veículos | Espaço - Pular | Mouse - Mirar/Atirar</p>
+        </div>
+        <div id="dialog-box" class="hidden">
+            <div id="dialog-content">Bem-vindo a Nova Atlântida, Miguel. Sua jornada começa agora.</div>
+            <button id="dialog-close">Continuar</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
